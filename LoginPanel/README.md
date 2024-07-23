@@ -27,7 +27,7 @@ Dieses Projekt ist ein einfaches Anmeldefeld für den Zugriff auf Online-Kurse. 
 
 Hier sind einige Screenshots des Projekts:
 
-![Hauptfenster](./images/hauptfenster.png)
+![Hauptfenster](Images/hauptfenster.png)
 *Hauptfenster des Anmeldebereichs*
 
 
