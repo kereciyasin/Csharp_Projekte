@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{25980E25-BEA6-426C-8B7C-F69D27982E47}</ProjectGuid>
+    <ProjectGuid>{27FA33B5-333D-4BC1-A1FC-C743CE9728C4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HelloWord</RootNamespace>
-    <AssemblyName>HelloWord</AssemblyName>
+    <RootNamespace>LoginPanel</RootNamespace>
+    <AssemblyName>LoginPanel</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
