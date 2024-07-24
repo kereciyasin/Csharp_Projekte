@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textPopcorn = new System.Windows.Forms.TextBox();
+            this.textWasser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textTicket = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textTee = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,24 +45,29 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelTotal = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelRechnung = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textTicket);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textTee);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textWasser);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textPopcorn);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 242);
             this.groupBox1.Name = "groupBox1";
@@ -79,19 +85,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Popcorn:";
             // 
-            // textBox1
+            // textPopcorn
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 39);
-            this.textBox1.TabIndex = 1;
+            this.textPopcorn.Location = new System.Drawing.Point(153, 81);
+            this.textPopcorn.Name = "textPopcorn";
+            this.textPopcorn.Size = new System.Drawing.Size(172, 39);
+            this.textPopcorn.TabIndex = 1;
             // 
-            // textBox2
+            // textWasser
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 126);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 39);
-            this.textBox2.TabIndex = 3;
+            this.textWasser.Location = new System.Drawing.Point(153, 126);
+            this.textWasser.Name = "textWasser";
+            this.textWasser.Size = new System.Drawing.Size(172, 39);
+            this.textWasser.TabIndex = 3;
             // 
             // label2
             // 
@@ -102,12 +108,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Wasser:";
             // 
-            // textBox3
+            // textTicket
             // 
-            this.textBox3.Location = new System.Drawing.Point(153, 216);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 39);
-            this.textBox3.TabIndex = 7;
+            this.textTicket.Location = new System.Drawing.Point(153, 216);
+            this.textTicket.Name = "textTicket";
+            this.textTicket.Size = new System.Drawing.Size(172, 39);
+            this.textTicket.TabIndex = 7;
             // 
             // label3
             // 
@@ -118,12 +124,12 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Ticket:";
             // 
-            // textBox4
+            // textTee
             // 
-            this.textBox4.Location = new System.Drawing.Point(153, 171);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 39);
-            this.textBox4.TabIndex = 5;
+            this.textTee.Location = new System.Drawing.Point(153, 171);
+            this.textTee.Name = "textTee";
+            this.textTee.Size = new System.Drawing.Size(172, 39);
+            this.textTee.TabIndex = 5;
             // 
             // label4
             // 
@@ -187,8 +193,11 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Lime;
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.labelRechnung);
+            this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.labelTotal);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Location = new System.Drawing.Point(828, 242);
             this.groupBox3.Name = "groupBox3";
@@ -206,40 +215,81 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Total: ";
             // 
-            // label9
+            // labelTotal
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(176, 81);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 32);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "00 CHF";
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.Location = new System.Drawing.Point(176, 81);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(92, 32);
+            this.labelTotal.TabIndex = 1;
+            this.labelTotal.Text = "00 CHF";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(71, 178);
+            this.button1.Location = new System.Drawing.Point(71, 129);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 54);
             this.button1.TabIndex = 2;
             this.button1.Text = "Rechner";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Chartreuse;
+            this.label10.BackColor = System.Drawing.Color.Black;
             this.label10.Font = new System.Drawing.Font("Pristina", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(399, 63);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label10.Location = new System.Drawing.Point(86, 85);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(128, 58);
+            this.label10.Size = new System.Drawing.Size(328, 58);
             this.label10.TabIndex = 10;
-            this.label10.Text = "label10";
+            this.label10.Text = "Antrag auf Verkauf";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(828, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(313, 177);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelRechnung
+            // 
+            this.labelRechnung.AutoSize = true;
+            this.labelRechnung.Location = new System.Drawing.Point(209, 253);
+            this.labelRechnung.Name = "labelRechnung";
+            this.labelRechnung.Size = new System.Drawing.Size(92, 32);
+            this.labelRechnung.TabIndex = 4;
+            this.labelRechnung.Text = "00 CHF";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(65, 253);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(128, 32);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Rechnung:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(71, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(212, 54);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1245, 790);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -254,6 +304,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,13 +313,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textPopcorn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textTicket;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textTee;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textWasser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label5;
@@ -277,9 +328,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelRechnung;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button2;
     }
 }
 
