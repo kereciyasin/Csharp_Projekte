@@ -17,10 +17,12 @@ Dieses Projekt ist ein Quiz-Spiel, das mit C# und Windows Form App (.NET Framewo
 
 ### Richtige Antwort
 ![Richtige Antwort](Images/Screenshot2.png)
-![Richtige Antwort] (Images/Screenshot4.png)
 
 ### Falsche Antwort
 ![Falsche Antwort](Images/Screenshot3.png)
+
+### Richtige Antwort
+![Richtige Antwort](Images/Screenshot4.png)
 
 ## Ergebnis
 ![Falsche Antwort](Images/Screenshot5.png)
