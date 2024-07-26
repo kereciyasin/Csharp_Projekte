@@ -75,6 +75,7 @@
             this.BtnB.TabIndex = 3;
             this.BtnB.Text = "B";
             this.BtnB.UseVisualStyleBackColor = true;
+            this.BtnB.Click += new System.EventHandler(this.BtnB_Click);
             // 
             // BtnC
             // 
@@ -84,6 +85,7 @@
             this.BtnC.TabIndex = 4;
             this.BtnC.Text = "C";
             this.BtnC.UseVisualStyleBackColor = true;
+            this.BtnC.Click += new System.EventHandler(this.BtnC_Click);
             // 
             // BtnD
             // 
@@ -93,6 +95,7 @@
             this.BtnD.TabIndex = 5;
             this.BtnD.Text = "D";
             this.BtnD.UseVisualStyleBackColor = true;
+            this.BtnD.Click += new System.EventHandler(this.BtnD_Click);
             // 
             // label1
             // 
