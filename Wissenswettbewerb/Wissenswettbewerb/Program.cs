@@ -16,7 +16,7 @@ namespace Wissenswettbewerb
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BtnC());
+            Application.Run(new Form3());
         }
     }
 }
