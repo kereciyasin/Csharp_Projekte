@@ -65,6 +65,7 @@
             this.BtnA.TabIndex = 2;
             this.BtnA.Text = "A";
             this.BtnA.UseVisualStyleBackColor = true;
+            this.BtnA.Click += new System.EventHandler(this.BtnA_Click);
             // 
             // BtnB
             // 
@@ -165,6 +166,7 @@
             this.label4.Size = new System.Drawing.Size(86, 35);
             this.label4.TabIndex = 15;
             this.label4.Text = "label4";
+            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -174,6 +176,7 @@
             this.label5.Size = new System.Drawing.Size(85, 35);
             this.label5.TabIndex = 16;
             this.label5.Text = "label5";
+            this.label5.Visible = false;
             // 
             // pictureBox1
             // 
@@ -199,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 726);
+            this.ClientSize = new System.Drawing.Size(1234, 609);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);

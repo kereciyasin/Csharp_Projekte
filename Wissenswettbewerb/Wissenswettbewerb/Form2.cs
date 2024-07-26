@@ -21,6 +21,23 @@ namespace Wissenswettbewerb
 
         int frageNo = 0, frageTrue = 0, frageFalsch = 0;
 
+        private void BtnA_Click(object sender, EventArgs e)
+        {
+            label5.Text = BtnA.Text;
+            if (label4.Text == label5.Text)
+            {
+                frageTrue++;
+                lblTrue.Text = frageTrue.ToString();    
+                pictureBox1.Visible = true; 
+            }
+            else
+            {
+                frageFalsch++;
+                lblFalsch.Text = frageFalsch.ToString();    
+                pictureBox2.Visible = true;
+            }
+        }
+
         private void btnNext_Click(object sender, EventArgs e)
         {
             frageNo++;
