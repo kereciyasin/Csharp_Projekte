@@ -102,27 +102,27 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(842, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 35);
+            this.label1.Size = new System.Drawing.Size(129, 35);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Soru No:";
+            this.label1.Text = "Frage No:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(842, 88);
+            this.label2.Location = new System.Drawing.Point(897, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 35);
+            this.label2.Size = new System.Drawing.Size(74, 35);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Dogru:";
+            this.label2.Text = "True:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(842, 134);
+            this.label3.Location = new System.Drawing.Point(883, 134);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 35);
+            this.label3.Size = new System.Drawing.Size(88, 35);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Yanlis:";
+            this.label3.Text = "Falsch";
             // 
             // lblSoruno
             // 
@@ -157,7 +157,7 @@
             this.BtnSonraki.Name = "BtnSonraki";
             this.BtnSonraki.Size = new System.Drawing.Size(275, 69);
             this.BtnSonraki.TabIndex = 12;
-            this.BtnSonraki.Text = "Sonraki";
+            this.BtnSonraki.Text = "Nächste Frage";
             this.BtnSonraki.UseVisualStyleBackColor = true;
             this.BtnSonraki.Click += new System.EventHandler(this.BtnSonraki_Click);
             // 

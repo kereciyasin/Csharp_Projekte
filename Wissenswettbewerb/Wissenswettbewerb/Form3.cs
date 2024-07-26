@@ -148,7 +148,7 @@ namespace Wissenswettbewerb
                 BtnC.Text = "Asa";
                 BtnD.Text = "Madrid";
                 label4.Text = "Jungfrau";
-                BtnSonraki.Text = "Sonuclar";
+                BtnSonraki.Text = "Ergebnis!";
             }
             if (soruno == 4) {
                 BtnA.Enabled = false;
@@ -157,7 +157,7 @@ namespace Wissenswettbewerb
                 BtnD.Enabled = false;
                 BtnSonraki.Enabled = false;
 
-                MessageBox.Show("Dogru: " + dogru + " Yanlis: " + yanlis);
+                MessageBox.Show("True: " + dogru + " Falsch: " + yanlis);
 
             }
         }
