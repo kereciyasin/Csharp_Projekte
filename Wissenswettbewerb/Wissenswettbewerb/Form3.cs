@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Wissenswettbewerb
 {
-    public partial class Form3 : Form
+    public partial class BtnC : Form
     {
-        public Form3()
+        public BtnC()
         {
             InitializeComponent();
         }
