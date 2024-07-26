@@ -29,12 +29,14 @@ namespace Wissenswettbewerb
             label4.Text = soruno.ToString();
             if (soruno == 1)
             {
+                richTextBox1.Text = "Cumhuriyet Kac yilinda ilan edilmistir ?";
+                btnA.Text = "1920";
+                btnB.Text = "1921";
+                btnC.Text = "1922";
+                btnD.Text = "1923";
             }
-            sdsadasd
-                if (true)
-            {
 
-            }
+
         }
     }
 }
