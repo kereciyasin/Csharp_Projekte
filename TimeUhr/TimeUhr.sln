@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeUhr", "TimeUhr\TimeUhr.csproj", "{08965021-CD5B-4CE3-9CA8-B196826600EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08965021-CD5B-4CE3-9CA8-B196826600EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08965021-CD5B-4CE3-9CA8-B196826600EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08965021-CD5B-4CE3-9CA8-B196826600EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08965021-CD5B-4CE3-9CA8-B196826600EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C61F41DB-FA20-480C-820E-C4A2D27F9CBF}
+	EndGlobalSection
+EndGlobal
