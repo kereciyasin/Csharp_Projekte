@@ -9,7 +9,7 @@ namespace Projekt_Spital
 {
     internal class sql
     {
-
+        
         public SqlConnection Connection()
         {
             SqlConnection verbinden = new SqlConnection("Data Source=kereci\\SQLEXPRESS;Initial Catalog=Spital_Projekt;Integrated Security=True;Trust Server Certificate=True");
