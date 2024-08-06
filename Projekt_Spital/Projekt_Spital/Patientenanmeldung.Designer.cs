@@ -80,6 +80,7 @@
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(268, 42);
             this.textPass.TabIndex = 4;
+            this.textPass.UseSystemPasswordChar = true;
             this.textPass.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Link
@@ -101,6 +102,7 @@
             this.buttonEinloggen.TabIndex = 6;
             this.buttonEinloggen.Text = "Einloggen";
             this.buttonEinloggen.UseVisualStyleBackColor = true;
+            this.buttonEinloggen.Click += new System.EventHandler(this.buttonEinloggen_Click);
             // 
             // Patientenanmeldung
             // 

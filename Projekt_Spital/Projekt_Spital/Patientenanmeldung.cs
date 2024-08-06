@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Projekt_Spital
 {
@@ -16,6 +17,7 @@ namespace Projekt_Spital
         {
             InitializeComponent();
         }
+        sql sqlverbinden = new sql();
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -27,6 +29,27 @@ namespace Projekt_Spital
             Registrierungsformular registrierungsformular = new Registrierungsformular();
             registrierungsformular.Show();
             this.Close();
+        }
+
+        private void buttonEinloggen_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("Select * From Tbl_Patient Where PatientNummer=@p1 AND PatientPass=@p2", sqlverbinden.Connection());
+            command.Parameters.AddWithValue("@p1", maskedId.Text);
+            command.Parameters.AddWithValue("@p2", textPass.Text);
+            SqlDataReader reader = command.ExecuteReader();
+            if (reader.Read()) {
+            
+            Patientendetails patientendetails = new Patientendetails();
+                patientendetails.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Benutzername oder Passwort fehlerhaft!");
+            }
+            sqlverbinden.Connection().Close(); 
+
+
         }
     }
 }
