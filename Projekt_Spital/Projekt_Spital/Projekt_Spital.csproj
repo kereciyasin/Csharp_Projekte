@@ -127,6 +127,12 @@
     <Compile Include="SekretärLogin.Designer.cs">
       <DependentUpon>SekretärLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Spital_ProjektDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spital_ProjektDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sql.cs" />
     <Compile Include="TerminListe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Spital_ProjektDataSet.xsc">
+      <DependentUpon>Spital_ProjektDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Spital_ProjektDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Spital_ProjektDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Spital_ProjektDataSet.xss">
+      <DependentUpon>Spital_ProjektDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
