@@ -12,9 +12,10 @@ namespace Projekt_Spital
         
         public SqlConnection Connection()
         {
-            SqlConnection verbinden = new SqlConnection("Data Source=kereci\\SQLEXPRESS;Initial Catalog=Spital_Projekt;Integrated Security=True;Trust Server Certificate=True");
-        
-        verbinden.Open();
+            SqlConnection verbinden = new SqlConnection("Data Source=kereci\\SQLEXPRESS;Initial Catalog=Spital_Projekt;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
+
+
+            verbinden.Open();
         return verbinden;   
         }
 
