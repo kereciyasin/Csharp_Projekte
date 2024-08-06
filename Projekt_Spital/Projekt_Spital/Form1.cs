@@ -16,5 +16,19 @@ namespace Projekt_Spital
         {
             InitializeComponent();
         }
+
+        private void buttonPatient_Click(object sender, EventArgs e)
+        {
+            Patientenanmeldung patientenanmeldung = new Patientenanmeldung();
+            patientenanmeldung.Show();
+            this.Hide();    
+        }
+
+        private void buttonArzt_Click(object sender, EventArgs e)
+        {
+            Arzt arzt = new Arzt();
+            arzt.Show();
+            this.Hide();
+        }
     }
 }

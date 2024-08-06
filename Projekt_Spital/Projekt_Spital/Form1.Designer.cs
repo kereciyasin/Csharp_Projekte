@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonPatient = new System.Windows.Forms.Button();
+            this.buttonArzt = new System.Windows.Forms.Button();
+            this.buttonSekretär = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,35 +41,37 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonPatient
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(32, 323);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(353, 169);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonPatient.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPatient.BackgroundImage")));
+            this.buttonPatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPatient.Location = new System.Drawing.Point(32, 323);
+            this.buttonPatient.Name = "buttonPatient";
+            this.buttonPatient.Size = new System.Drawing.Size(353, 169);
+            this.buttonPatient.TabIndex = 0;
+            this.buttonPatient.UseVisualStyleBackColor = true;
+            this.buttonPatient.Click += new System.EventHandler(this.buttonPatient_Click);
             // 
-            // button2
+            // buttonArzt
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(423, 323);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(353, 169);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonArzt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonArzt.BackgroundImage")));
+            this.buttonArzt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonArzt.Location = new System.Drawing.Point(423, 323);
+            this.buttonArzt.Name = "buttonArzt";
+            this.buttonArzt.Size = new System.Drawing.Size(353, 169);
+            this.buttonArzt.TabIndex = 1;
+            this.buttonArzt.UseVisualStyleBackColor = true;
+            this.buttonArzt.Click += new System.EventHandler(this.buttonArzt_Click);
             // 
-            // button3
+            // buttonSekretär
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(804, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(353, 169);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonSekretär.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSekretär.BackgroundImage")));
+            this.buttonSekretär.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSekretär.Location = new System.Drawing.Point(804, 323);
+            this.buttonSekretär.Name = "buttonSekretär";
+            this.buttonSekretär.Size = new System.Drawing.Size(353, 169);
+            this.buttonSekretär.TabIndex = 2;
+            this.buttonSekretär.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -130,9 +132,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSekretär);
+            this.Controls.Add(this.buttonArzt);
+            this.Controls.Add(this.buttonPatient);
             this.Font = new System.Drawing.Font("Georgia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form1";
@@ -146,9 +148,9 @@
         #endregion
 
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonPatient;
+        private System.Windows.Forms.Button buttonArzt;
+        private System.Windows.Forms.Button buttonSekretär;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
