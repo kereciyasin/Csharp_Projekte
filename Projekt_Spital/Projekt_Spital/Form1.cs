@@ -30,5 +30,12 @@ namespace Projekt_Spital
             arzt.Show();
             this.Hide();
         }
+
+        private void buttonSekretär_Click(object sender, EventArgs e)
+        {
+            SekretärLogin sekretärLogin = new SekretärLogin();
+            sekretärLogin.Show();
+            this.Hide();
+        }
     }
 }

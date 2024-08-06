@@ -72,6 +72,7 @@
             this.buttonSekretär.Size = new System.Drawing.Size(353, 169);
             this.buttonSekretär.TabIndex = 2;
             this.buttonSekretär.UseVisualStyleBackColor = true;
+            this.buttonSekretär.Click += new System.EventHandler(this.buttonSekretär_Click);
             // 
             // label1
             // 
@@ -125,6 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(1187, 631);
             this.Controls.Add(this.label4);
@@ -137,8 +139,9 @@
             this.Controls.Add(this.buttonPatient);
             this.Font = new System.Drawing.Font("Georgia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sea Spital";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

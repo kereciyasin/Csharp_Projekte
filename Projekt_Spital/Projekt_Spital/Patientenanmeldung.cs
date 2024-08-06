@@ -21,5 +21,12 @@ namespace Projekt_Spital
         {
 
         }
+
+        private void Link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registrierungsformular registrierungsformular = new Registrierungsformular();
+            registrierungsformular.Show();
+            this.Close();
+        }
     }
 }

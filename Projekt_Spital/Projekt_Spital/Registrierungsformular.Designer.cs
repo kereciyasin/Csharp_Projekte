@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrierungsformular));
             this.buttonRegistrieren = new System.Windows.Forms.Button();
             this.textPass = new System.Windows.Forms.TextBox();
             this.maskedId = new System.Windows.Forms.MaskedTextBox();
@@ -45,11 +46,12 @@
             // 
             // buttonRegistrieren
             // 
+            this.buttonRegistrieren.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.buttonRegistrieren.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.buttonRegistrieren.Location = new System.Drawing.Point(249, 401);
             this.buttonRegistrieren.Name = "buttonRegistrieren";
             this.buttonRegistrieren.Size = new System.Drawing.Size(265, 58);
-            this.buttonRegistrieren.TabIndex = 13;
+            this.buttonRegistrieren.TabIndex = 7;
             this.buttonRegistrieren.Text = "Registrieren";
             this.buttonRegistrieren.UseVisualStyleBackColor = false;
             // 
@@ -58,7 +60,7 @@
             this.textPass.Location = new System.Drawing.Point(249, 282);
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(268, 42);
-            this.textPass.TabIndex = 11;
+            this.textPass.TabIndex = 5;
             // 
             // maskedId
             // 
@@ -66,7 +68,7 @@
             this.maskedId.Mask = "00000000000";
             this.maskedId.Name = "maskedId";
             this.maskedId.Size = new System.Drawing.Size(265, 42);
-            this.maskedId.TabIndex = 10;
+            this.maskedId.TabIndex = 3;
             // 
             // label3
             // 
@@ -118,14 +120,14 @@
             this.textVorname.Location = new System.Drawing.Point(249, 47);
             this.textVorname.Name = "textVorname";
             this.textVorname.Size = new System.Drawing.Size(268, 42);
-            this.textVorname.TabIndex = 17;
+            this.textVorname.TabIndex = 1;
             // 
             // textNachname
             // 
             this.textNachname.Location = new System.Drawing.Point(249, 101);
             this.textNachname.Name = "textNachname";
             this.textNachname.Size = new System.Drawing.Size(268, 42);
-            this.textNachname.TabIndex = 18;
+            this.textNachname.TabIndex = 2;
             // 
             // maskedTelefon
             // 
@@ -133,7 +135,7 @@
             this.maskedTelefon.Mask = "(000)0000000";
             this.maskedTelefon.Name = "maskedTelefon";
             this.maskedTelefon.Size = new System.Drawing.Size(265, 42);
-            this.maskedTelefon.TabIndex = 19;
+            this.maskedTelefon.TabIndex = 4;
             // 
             // comboGender
             // 
@@ -144,7 +146,7 @@
             this.comboGender.Location = new System.Drawing.Point(249, 342);
             this.comboGender.Name = "comboGender";
             this.comboGender.Size = new System.Drawing.Size(264, 43);
-            this.comboGender.TabIndex = 20;
+            this.comboGender.TabIndex = 6;
             // 
             // label6
             // 
@@ -157,6 +159,7 @@
             // 
             // Registrierungsformular
             // 
+            this.AcceptButton = this.buttonRegistrieren;
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
@@ -175,9 +178,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Registrierungsformular";
-            this.Text = "Vorname :";
+            this.Text = "Patient Registieren";
             this.ResumeLayout(false);
             this.PerformLayout();
 
