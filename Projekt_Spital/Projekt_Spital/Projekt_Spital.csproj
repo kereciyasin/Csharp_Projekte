@@ -47,11 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arzt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arzt.Designer.cs">
+      <DependentUpon>Arzt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArztDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArztDetails.Designer.cs">
+      <DependentUpon>ArztDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmbearbeiten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmbearbeiten.Designer.cs">
+      <DependentUpon>Frmbearbeiten.cs</DependentUpon>
     </Compile>
     <Compile Include="Patientenanmeldung.cs">
       <SubType>Form</SubType>
@@ -73,8 +91,17 @@
     <Compile Include="Registrierungsformular.Designer.cs">
       <DependentUpon>Registrierungsformular.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Arzt.resx">
+      <DependentUpon>Arzt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArztDetails.resx">
+      <DependentUpon>ArztDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmbearbeiten.resx">
+      <DependentUpon>Frmbearbeiten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patientenanmeldung.resx">
       <DependentUpon>Patientenanmeldung.cs</DependentUpon>
