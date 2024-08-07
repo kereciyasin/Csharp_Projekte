@@ -55,5 +55,37 @@ namespace Projekt_Spital
 
 
         }
+
+        private void comboBranch_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        {
+            comboArzt.Items.Clear();
+            SqlCommand cmd = new SqlCommand("Select ArztVorname, ArztNachname From Tbl_Arzt where ArztAbteillung=@p1", sqlverbinden.Connection());
+            cmd.Parameters.AddWithValue("@p1", comboBranch.Text);
+            SqlDataReader sqlDataReader = cmd.ExecuteReader();
+            while (sqlDataReader.Read()) 
+            {
+            comboArzt.Items.Add(sqlDataReader[0] + " " + sqlDataReader[1]);
+            }
+            sqlverbinden.Connection().Close();  
+        }
+
+        private void comboArzt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable(); 
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Termin where TerminBranch='" + comboBranch.Text+ "'", sqlverbinden.Connection());
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+        }
+
+        private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registrierungsformular registrierungsformular = new Registrierungsformular();
+            registrierungsformular.idno = labelId.Text;
+            registrierungsformular.Show();
+            
+            
+        }
     }
 }

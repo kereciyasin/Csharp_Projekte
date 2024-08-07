@@ -33,5 +33,10 @@ namespace Projekt_Spital
             MessageBox.Show("Ihre Registrierung war erfolgreich. Ihr Passwort lautet: " + textPass.Text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+        public string idno;
+        private void Registrierungsformular_Load(object sender, EventArgs e)
+        {
+            maskedId.Text = idno; 
+        }
     }
 }

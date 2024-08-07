@@ -127,6 +127,7 @@
             this.linkLabel.TabIndex = 6;
             this.linkLabel.TabStop = true;
             this.linkLabel.Text = "Meine Daten bearbeiten ";
+            this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
             // 
             // buttonBuchen
             // 
@@ -161,6 +162,7 @@
             this.comboArzt.Name = "comboArzt";
             this.comboArzt.Size = new System.Drawing.Size(227, 43);
             this.comboArzt.TabIndex = 4;
+            this.comboArzt.SelectedIndexChanged += new System.EventHandler(this.comboArzt_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -178,6 +180,7 @@
             this.comboBranch.Name = "comboBranch";
             this.comboBranch.Size = new System.Drawing.Size(227, 43);
             this.comboBranch.TabIndex = 2;
+            this.comboBranch.SelectedIndexChanged += new System.EventHandler(this.comboBranch_SelectedIndexChanged);
             // 
             // groupBox3
             // 

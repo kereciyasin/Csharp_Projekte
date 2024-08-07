@@ -183,6 +183,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Registrierungsformular";
             this.Text = "Patient Registieren";
+            this.Load += new System.EventHandler(this.Registrierungsformular_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
