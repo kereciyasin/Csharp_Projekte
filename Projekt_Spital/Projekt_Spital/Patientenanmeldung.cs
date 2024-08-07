@@ -31,6 +31,7 @@ namespace Projekt_Spital
             this.Close();
         }
 
+
         private void buttonEinloggen_Click(object sender, EventArgs e)
         {
             SqlCommand command = new SqlCommand("Select * From Tbl_Patient Where PatientNummer=@p1 AND PatientPass=@p2", sqlverbinden.Connection());

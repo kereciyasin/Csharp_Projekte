@@ -21,22 +21,41 @@ namespace Projekt_Spital
         sql sqlverbinden = new sql();
         private void buttonRegistrieren_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into Tbl_Patient (PatientVorname, PatientName, PatientNummer, PatientTelefon, PatientPass, PatientGender) values (@p1,@p2,@p3,@p4,@p5,@p6)", sqlverbinden.Connection());
-            komut.Parameters.AddWithValue("@p1", textVorname.Text);
-            komut.Parameters.AddWithValue("@p2", textNachname.Text);
-            komut.Parameters.AddWithValue("@p3", maskedId.Text);
-            komut.Parameters.AddWithValue("@p4", maskedTelefon.Text);
-            komut.Parameters.AddWithValue("@p5", textPass.Text);
-            komut.Parameters.AddWithValue("@p6", comboGender.Text);
-            komut.ExecuteNonQuery();
+            SqlCommand sqlCommand = new SqlCommand("update Tbl_Patient set PatientVorname=@p1, PatientName=@p2, PatientTelefon=@p3, PatientPass=@p4 where PatientNummer=@p5", sqlverbinden.Connection());
+            sqlCommand.Parameters.AddWithValue("@p1", textVorname.Text);
+            sqlCommand.Parameters.AddWithValue("@p2", textNachname.Text);
+            sqlCommand.Parameters.AddWithValue("@p3", maskedTelefon.Text);
+            sqlCommand.Parameters.AddWithValue("@p4", textPass.Text);
+            sqlCommand.Parameters.AddWithValue("@p5", maskedId.Text);
+            sqlCommand.ExecuteNonQuery();
             sqlverbinden.Connection().Close();
-            MessageBox.Show("Ihre Registrierung war erfolgreich. Ihr Passwort lautet: " + textPass.Text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Die Daten wurden erfolgreich aktualisiert", "Information", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+
+
 
         }
         public string idno;
+
+        sql verbinden = new sql();
         private void Registrierungsformular_Load(object sender, EventArgs e)
         {
-            maskedId.Text = idno; 
+           
+            maskedId.Text = idno;
+
+         SqlCommand komut1 = new SqlCommand("Select * from Tbl_Patient where PatientNummer=@p1", verbinden.Connection());
+            komut1.Parameters.AddWithValue("@p1", maskedId.Text);
+            SqlDataReader reader = komut1.ExecuteReader();
+            while (reader.Read())
+            {
+                textVorname.Text = reader[1].ToString();
+                textNachname.Text = reader[2].ToString();
+                maskedTelefon.Text = reader[4].ToString();
+                textPass.Text = reader[5].ToString();
+                comboGender.Text = reader[6].ToString();
+            } 
+            verbinden.Connection().Close();
         }
+
     }
 }
