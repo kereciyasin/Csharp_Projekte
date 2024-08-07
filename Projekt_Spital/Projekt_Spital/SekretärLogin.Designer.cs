@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SekretärLogin));
             this.buttonEinloggen = new System.Windows.Forms.Button();
             this.textPass = new System.Windows.Forms.TextBox();
             this.maskedId = new System.Windows.Forms.MaskedTextBox();
@@ -44,6 +45,7 @@
             this.buttonEinloggen.TabIndex = 13;
             this.buttonEinloggen.Text = "Einloggen";
             this.buttonEinloggen.UseVisualStyleBackColor = true;
+            this.buttonEinloggen.Click += new System.EventHandler(this.buttonEinloggen_Click);
             // 
             // textPass
             // 
@@ -59,6 +61,7 @@
             this.maskedId.Name = "maskedId";
             this.maskedId.Size = new System.Drawing.Size(265, 42);
             this.maskedId.TabIndex = 10;
+            this.maskedId.Text = "12345678901";
             // 
             // label3
             // 
@@ -101,9 +104,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SekretärLogin";
             this.Text = "SekretärLogin";
+            this.Load += new System.EventHandler(this.SekretärLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
