@@ -40,6 +40,7 @@ namespace Projekt_Spital
             if (reader.Read()) {
             
             Patientendetails patientendetails = new Patientendetails();
+                patientendetails.id = maskedId.Text;
                 patientendetails.Show();
                 this.Hide();
             }
@@ -49,6 +50,11 @@ namespace Projekt_Spital
             }
             sqlverbinden.Connection().Close(); 
 
+
+        }
+
+        private void Patientenanmeldung_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -123,6 +123,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Patientenanmeldung";
             this.Text = "Patientenanmeldung";
+            this.Load += new System.EventHandler(this.Patientenanmeldung_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
