@@ -111,6 +111,7 @@
             this.comboBranch.Name = "comboBranch";
             this.comboBranch.Size = new System.Drawing.Size(237, 43);
             this.comboBranch.TabIndex = 3;
+            this.comboBranch.SelectedIndexChanged += new System.EventHandler(this.comboBranch_SelectedIndexChanged);
             // 
             // maskedNummer
             // 
@@ -159,6 +160,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -169,6 +171,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ArztPanel
             // 
