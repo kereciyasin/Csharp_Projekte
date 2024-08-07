@@ -35,7 +35,23 @@ namespace Projekt_Spital
             }
             sqlverbinden.Connection().Close();  
 
+            //Termin
 
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Termin where PatientNummer=" + id, sqlverbinden.Connection());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+            //Branch
+
+            SqlCommand sqlCommand2 = new SqlCommand("Select BranchName From Tbl_Branch", sqlverbinden.Connection());
+            SqlDataReader sqlDataReader2 = sqlCommand2.ExecuteReader();
+
+            while (sqlDataReader2.Read())
+            {
+                comboBranch.Items.Add(sqlDataReader2[0]);
+            }
+            sqlverbinden.Connection().Close();
 
 
         }
