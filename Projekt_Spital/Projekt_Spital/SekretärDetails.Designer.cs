@@ -60,6 +60,7 @@
             this.buttonTerminliste = new System.Windows.Forms.Button();
             this.buttonBranch = new System.Windows.Forms.Button();
             this.buttonArzt = new System.Windows.Forms.Button();
+            this.buttonMitteilung = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -340,12 +341,13 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.buttonMitteilung);
             this.groupBox6.Controls.Add(this.buttonTerminliste);
             this.groupBox6.Controls.Add(this.buttonBranch);
             this.groupBox6.Controls.Add(this.buttonArzt);
             this.groupBox6.Location = new System.Drawing.Point(45, 600);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(503, 84);
+            this.groupBox6.Size = new System.Drawing.Size(643, 84);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Schnellzugriff";
@@ -379,6 +381,16 @@
             this.buttonArzt.Text = "Arzt";
             this.buttonArzt.UseVisualStyleBackColor = true;
             this.buttonArzt.Click += new System.EventHandler(this.buttonArzt_Click);
+            // 
+            // buttonMitteilung
+            // 
+            this.buttonMitteilung.Location = new System.Drawing.Point(464, 36);
+            this.buttonMitteilung.Name = "buttonMitteilung";
+            this.buttonMitteilung.Size = new System.Drawing.Size(156, 42);
+            this.buttonMitteilung.TabIndex = 18;
+            this.buttonMitteilung.Text = "Mitteilung";
+            this.buttonMitteilung.UseVisualStyleBackColor = true;
+            this.buttonMitteilung.Click += new System.EventHandler(this.buttonMitteilung_Click);
             // 
             // SekretärDetails
             // 
@@ -444,5 +456,6 @@
         private System.Windows.Forms.Button buttonArzt;
         private System.Windows.Forms.Button buttonBranch;
         private System.Windows.Forms.Button buttonTerminliste;
+        private System.Windows.Forms.Button buttonMitteilung;
     }
 }

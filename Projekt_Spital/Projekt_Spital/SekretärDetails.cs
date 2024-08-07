@@ -124,5 +124,12 @@ namespace Projekt_Spital
         {
             
         }
+
+        private void buttonMitteilung_Click(object sender, EventArgs e)
+        {
+            Mitteilungen mitteilungen = new Mitteilungen(); 
+            mitteilungen.Show();
+            this.Hide();
+        }
     }
 }
