@@ -138,6 +138,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Erstellen";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBox1
             // 
@@ -357,7 +358,7 @@
             this.groupBox6.Size = new System.Drawing.Size(503, 84);
             this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "groupBox6";
+            this.groupBox6.Text = "Schnellzugriff";
             // 
             // buttonTerminliste
             // 
@@ -385,6 +386,7 @@
             this.buttonArzt.TabIndex = 15;
             this.buttonArzt.Text = "Arzt";
             this.buttonArzt.UseVisualStyleBackColor = true;
+            this.buttonArzt.Click += new System.EventHandler(this.buttonArzt_Click);
             // 
             // SekretärDetails
             // 

@@ -89,5 +89,21 @@ namespace Projekt_Spital
             }
             sql.Connection().Close();   
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand mitteilung = new SqlCommand("insert into Tbl_Mitteilung (Mitteilung) values (@d1)", sql.Connection());
+            mitteilung.Parameters.AddWithValue("@d1", richTextBox1.Text);
+            mitteilung.ExecuteNonQuery();
+            sql.Connection().Close();
+            MessageBox.Show("Die Mitteilung wurde erstellt!");
+        }
+
+        private void buttonArzt_Click(object sender, EventArgs e)
+        {
+            ArztPanel arztPanel = new ArztPanel();  
+            arztPanel.Show();   
+
+        }
     }
 }
