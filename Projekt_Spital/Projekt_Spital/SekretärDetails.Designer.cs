@@ -307,20 +307,21 @@
             this.groupBox4.Controls.Add(this.dataGridView1);
             this.groupBox4.Location = new System.Drawing.Point(988, 42);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(226, 266);
+            this.groupBox4.Size = new System.Drawing.Size(285, 268);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Branchdetails";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(220, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(279, 227);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox5
@@ -328,7 +329,7 @@
             this.groupBox5.Controls.Add(this.dataGridView2);
             this.groupBox5.Location = new System.Drawing.Point(991, 316);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(226, 268);
+            this.groupBox5.Size = new System.Drawing.Size(282, 278);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ärzte";
@@ -341,7 +342,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(220, 227);
+            this.dataGridView2.Size = new System.Drawing.Size(276, 237);
             this.dataGridView2.TabIndex = 0;
             // 
             // groupBox6
@@ -388,7 +389,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(1223, 693);
+            this.ClientSize = new System.Drawing.Size(1296, 760);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

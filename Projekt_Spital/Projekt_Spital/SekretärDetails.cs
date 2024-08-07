@@ -43,6 +43,14 @@ namespace Projekt_Spital
             SqlDataAdapter da = new SqlDataAdapter("Select * from Tbl_Branch", sql.Connection());
             da.Fill(dt);    
             dataGridView1.DataSource = dt;  
+
+
+            // Ärzte
+            DataTable dt3 = new DataTable();
+            SqlDataAdapter da2 = new SqlDataAdapter("Select * from Tbl_Arzt", sql.Connection());
+            da2.Fill(dt3);
+            dataGridView2.DataSource= dt3;
+
         }
     }
 }
