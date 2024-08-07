@@ -44,6 +44,15 @@ namespace Projekt_Spital
             da.Fill(dt);    
             dataGridView1.DataSource = dt;  
 
+            // Branch bringt
+            SqlCommand command2 = new SqlCommand("Select BranchName from Tbl_Branch", sql.Connection());
+            SqlDataReader dr2 = command2.ExecuteReader();
+            while(dr2.Read())
+            {
+                comboBranch.Items.Add(dr2[0]);   
+            }
+            sql.Connection().Close ();
+
 
             // Ärzte
             DataTable dt3 = new DataTable();
@@ -51,6 +60,34 @@ namespace Projekt_Spital
             da2.Fill(dt3);
             dataGridView2.DataSource= dt3;
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd1 = new SqlCommand("insert into Tbl_Termin (TerminDate, TerminUhr, TerminBranch, TerminArzt) values (@p1,@p2,@p3,@p4)", sql.Connection());
+            cmd1.Parameters.AddWithValue("@p1", maskedDatum.Text);
+            cmd1.Parameters.AddWithValue("@p2", maskedUhr.Text);
+            cmd1.Parameters.AddWithValue("@p3", comboBranch.Text);
+            cmd1.Parameters.AddWithValue("@p4", comboArzt.Text);
+            cmd1.ExecuteNonQuery();
+            sql.Connection().Close();
+            MessageBox.Show("Der Termin wurde erstellt.");
+    
+        }
+
+        private void comboBranch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboArzt.Items.Clear();
+            SqlCommand cmd2 = new SqlCommand("Select ArztVorname, ArztNachname from Tbl_Arzt where ArztAbteillung=@p1", sql.Connection());
+            cmd2.Parameters.AddWithValue("@p1", comboBranch.Text);
+            SqlDataReader dr2 = cmd2.ExecuteReader();
+            while (dr2.Read()) 
+            {
+
+                comboArzt.Items.Add(dr2[0] + " " + dr2[1]);
+
+            }
+            sql.Connection().Close();   
         }
     }
 }

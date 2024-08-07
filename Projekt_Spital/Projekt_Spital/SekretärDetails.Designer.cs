@@ -188,6 +188,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Termin Buchen";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // checkBox1
             // 
@@ -222,6 +223,7 @@
             this.comboBranch.Name = "comboBranch";
             this.comboBranch.Size = new System.Drawing.Size(176, 43);
             this.comboBranch.TabIndex = 10;
+            this.comboBranch.SelectedIndexChanged += new System.EventHandler(this.comboBranch_SelectedIndexChanged);
             // 
             // label11
             // 
