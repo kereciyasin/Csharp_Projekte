@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArztdatenBearbeiten));
             this.textNachname = new System.Windows.Forms.TextBox();
             this.textVorname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -161,7 +162,8 @@
             this.Controls.Add(this.maskedId);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ArztdatenBearbeiten";
             this.Text = "ArztdatenBearbeiten";
             this.ResumeLayout(false);

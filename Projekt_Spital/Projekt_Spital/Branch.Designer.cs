@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Branch));
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textNachname = new System.Windows.Forms.TextBox();
-            this.textVorname = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
+            this.textBranch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -48,6 +49,7 @@
             this.button3.TabIndex = 27;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -58,6 +60,7 @@
             this.button2.TabIndex = 26;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -68,20 +71,21 @@
             this.button1.TabIndex = 25;
             this.button1.Text = "Hinzufügen";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textNachname
+            // textName
             // 
-            this.textNachname.Location = new System.Drawing.Point(216, 154);
-            this.textNachname.Name = "textNachname";
-            this.textNachname.Size = new System.Drawing.Size(238, 42);
-            this.textNachname.TabIndex = 20;
+            this.textName.Location = new System.Drawing.Point(216, 154);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(238, 42);
+            this.textName.TabIndex = 20;
             // 
-            // textVorname
+            // textBranch
             // 
-            this.textVorname.Location = new System.Drawing.Point(216, 103);
-            this.textVorname.Name = "textVorname";
-            this.textVorname.Size = new System.Drawing.Size(238, 42);
-            this.textVorname.TabIndex = 19;
+            this.textBranch.Location = new System.Drawing.Point(216, 103);
+            this.textBranch.Name = "textBranch";
+            this.textBranch.Size = new System.Drawing.Size(238, 42);
+            this.textBranch.TabIndex = 19;
             // 
             // label2
             // 
@@ -110,23 +114,27 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(620, 309);
             this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Branch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(1137, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textNachname);
-            this.Controls.Add(this.textVorname);
+            this.Controls.Add(this.textName);
+            this.Controls.Add(this.textBranch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Branch";
             this.Text = "Branch";
             this.Load += new System.EventHandler(this.Branch_Load);
@@ -141,8 +149,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textNachname;
-        private System.Windows.Forms.TextBox textVorname;
+        private System.Windows.Forms.TextBox textName;
+        private System.Windows.Forms.TextBox textBranch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;

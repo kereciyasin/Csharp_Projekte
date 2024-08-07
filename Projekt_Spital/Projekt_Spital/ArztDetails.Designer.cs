@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArztDetails));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -110,6 +111,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Termindetails ";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(20, 50);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(501, 139);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(193, 62);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 35);
+            this.label6.TabIndex = 2;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
@@ -131,22 +148,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(546, 590);
             this.dataGridView1.TabIndex = 0;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(193, 62);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 35);
-            this.label6.TabIndex = 2;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(20, 50);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(501, 139);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button4);
@@ -160,23 +161,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
             // 
-            // button
+            // button4
             // 
-            this.button.Location = new System.Drawing.Point(31, 56);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(250, 40);
-            this.button.TabIndex = 0;
-            this.button.Text = "Daten bearbeiten";
-            this.button.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(31, 119);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = " Internet";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(287, 119);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(250, 40);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Ausloggen";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -187,14 +179,23 @@
             this.button3.Text = "Mitteilungen";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button2
             // 
-            this.button4.Location = new System.Drawing.Point(287, 119);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Ausloggen";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(31, 119);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(250, 40);
+            this.button2.TabIndex = 1;
+            this.button2.Text = " Internet";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button
+            // 
+            this.button.Location = new System.Drawing.Point(31, 56);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(250, 40);
+            this.button.TabIndex = 0;
+            this.button.Text = "Daten bearbeiten";
+            this.button.UseVisualStyleBackColor = true;
             // 
             // ArztDetails
             // 
@@ -207,6 +208,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ArztDetails";
             this.Text = "ArztDetails";

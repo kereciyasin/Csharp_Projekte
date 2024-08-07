@@ -105,5 +105,24 @@ namespace Projekt_Spital
             arztPanel.Show();   
 
         }
+
+        private void buttonBranch_Click(object sender, EventArgs e)
+        {
+            Branch branch = new Branch();
+            branch.Show();
+            this.Hide();    
+        }
+
+        private void buttonTerminliste_Click(object sender, EventArgs e)
+        {
+            TerminListe liste = new TerminListe();  
+            liste.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

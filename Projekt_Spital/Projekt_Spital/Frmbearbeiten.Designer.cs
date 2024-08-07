@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmbearbeiten));
             this.label6 = new System.Windows.Forms.Label();
             this.comboGender = new System.Windows.Forms.ComboBox();
             this.maskedTelefon = new System.Windows.Forms.MaskedTextBox();
@@ -187,6 +188,7 @@
             this.Controls.Add(this.maskedId);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frmbearbeiten";
             this.Text = "Frmbearbeiten";
             this.ResumeLayout(false);
