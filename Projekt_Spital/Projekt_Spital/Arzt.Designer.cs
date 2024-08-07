@@ -45,6 +45,7 @@
             this.buttonEinloggen.TabIndex = 13;
             this.buttonEinloggen.Text = "Einloggen";
             this.buttonEinloggen.UseVisualStyleBackColor = true;
+            this.buttonEinloggen.Click += new System.EventHandler(this.buttonEinloggen_Click);
             // 
             // textPass
             // 
@@ -52,6 +53,7 @@
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(268, 42);
             this.textPass.TabIndex = 11;
+            this.textPass.UseSystemPasswordChar = true;
             // 
             // maskedId
             // 
@@ -91,6 +93,7 @@
             // 
             // Arzt
             // 
+            this.AcceptButton = this.buttonEinloggen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;

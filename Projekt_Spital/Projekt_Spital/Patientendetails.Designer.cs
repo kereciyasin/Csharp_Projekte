@@ -46,6 +46,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -105,6 +107,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.linkLabel);
             this.groupBox2.Controls.Add(this.buttonBuchen);
             this.groupBox2.Controls.Add(this.label5);
@@ -138,11 +142,12 @@
             this.buttonBuchen.TabIndex = 5;
             this.buttonBuchen.Text = "Termin buchen";
             this.buttonBuchen.UseVisualStyleBackColor = true;
+            this.buttonBuchen.Click += new System.EventHandler(this.buttonBuchen_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(65, 114);
+            this.label5.Location = new System.Drawing.Point(65, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 35);
             this.label5.TabIndex = 5;
@@ -159,7 +164,7 @@
             // comboArzt
             // 
             this.comboArzt.FormattingEnabled = true;
-            this.comboArzt.Location = new System.Drawing.Point(171, 111);
+            this.comboArzt.Location = new System.Drawing.Point(171, 124);
             this.comboArzt.Name = "comboArzt";
             this.comboArzt.Size = new System.Drawing.Size(227, 43);
             this.comboArzt.TabIndex = 4;
@@ -168,7 +173,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 60);
+            this.label6.Location = new System.Drawing.Point(32, 83);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 35);
             this.label6.TabIndex = 3;
@@ -177,7 +182,7 @@
             // comboBranch
             // 
             this.comboBranch.FormattingEnabled = true;
-            this.comboBranch.Location = new System.Drawing.Point(171, 52);
+            this.comboBranch.Location = new System.Drawing.Point(171, 75);
             this.comboBranch.Name = "comboBranch";
             this.comboBranch.Size = new System.Drawing.Size(227, 43);
             this.comboBranch.TabIndex = 2;
@@ -223,6 +228,24 @@
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.Size = new System.Drawing.Size(622, 291);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(82, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 35);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "ID : ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(171, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(227, 42);
+            this.textBox1.TabIndex = 8;
             // 
             // Patientendetails
             // 
@@ -271,5 +294,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel linkLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

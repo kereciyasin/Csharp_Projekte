@@ -74,7 +74,7 @@ namespace Projekt_Spital
         private void comboArzt_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable(); 
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Termin where TerminBranch='" + comboBranch.Text+ "'", sqlverbinden.Connection());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Termin where TerminBranch='" + comboBranch.Text+ "'" + " and TerminArzt='"+ comboArzt.Text + "' and TerminSitution=0", sqlverbinden.Connection());
             da.Fill(dt);
             dataGridView2.DataSource = dt;
         }
@@ -86,6 +86,24 @@ namespace Projekt_Spital
             registrierungsformular.Show();
             
             
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int option = dataGridView2.SelectedCells[0].RowIndex;
+            textBox1.Text = dataGridView2.Rows[option].Cells[0].Value.ToString();
+        }
+
+        private void buttonBuchen_Click(object sender, EventArgs e)
+        {
+            SqlCommand sqlCommand = new SqlCommand("update Tbl_Termin set TerminSitution=1, PatientNummer=@p1, PatientErk=@p2 where TerminId=@p3", sqlverbinden.Connection());  
+            sqlCommand.Parameters.AddWithValue("@p1", labelId.Text);
+            sqlCommand.Parameters.AddWithValue("@p2", richTextBox1.Text);
+            sqlCommand.Parameters.AddWithValue("@p3", textBox1.Text);
+            sqlCommand.ExecuteNonQuery();
+            sqlverbinden.Connection().Close();
+            MessageBox.Show("Erfolgreich!");
+
         }
     }
 }
