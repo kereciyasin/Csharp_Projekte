@@ -17,7 +17,7 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
 ## Funktionen
 
 ### Home-Page
-![Patienten-Login](Images/Screenshot 2024-08-08 110912.png)
+![Home-Login](Images/Screenshot12.png)
 
 ### Patienten-Login
 
