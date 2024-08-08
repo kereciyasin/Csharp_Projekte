@@ -9,8 +9,6 @@ Dieses Projekt ist ein **Krankenhaus-Management-System**, das mit **C# Windows F
   - [Arzt-Login](#arzt-login)
   - [Sekretär-Login](#sekretär-login)
 - [Datenbank](#datenbank)
-- [Installation](#installation)
-- [Bildschirmfotos](#bildschirmfotos)
 
 ## Allgemeine Informationen
 
@@ -18,19 +16,22 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
 
 ## Funktionen
 
+### Home-Page
+
+
 ### Patienten-Login
 
 - **Anmeldung:** Patienten melden sich mit ihrer Passnummer und ihrem Passwort im System an.
-  ![Patienten-Login](path_to_your_image)
+  ![Patienten-Login](/Images/Screenshot1.png)
   
 - **Aktuelle Termine:** Nach der Anmeldung werden die aktuellen Termine des Patienten angezeigt.
-  ![Aktuelle Termine](path_to_your_image)
+  ![Aktuelle Termine](/Images/Screenshot2.png)
   
 - **Neuer Termin:** Der Patient kann eine neue Terminvereinbarung treffen, indem er seine Beschwerde eingibt.
-  ![Neuer Termin](path_to_your_image)
+  ![Neuer Termin](/Images/Screenshot3.png)
   
 - **Daten bearbeiten:** Der Patient kann über die Schaltfläche "Meine Daten bearbeiten" seine vorhandenen Daten aktualisieren. Alle Änderungen werden automatisch in der SQL-Datenbank gespeichert.
-  ![Daten bearbeiten](path_to_your_image)
+  ![Daten bearbeiten](/Images/Screenshot4.png)
 
 ### Arzt-Login
 
