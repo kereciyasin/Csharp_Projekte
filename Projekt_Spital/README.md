@@ -43,7 +43,7 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
   ![Terminliste](Images/Screenshot001.png)
   
 - **Daten bearbeiten:** Der Arzt kann über die Schaltfläche "Daten bearbeiten" seine persönlichen Informationen aktualisieren.
-  ![Daten bearbeiten](Images/Screenshot4.png)
+  ![Daten bearbeiten](Images/Screenshot4.png.png)
   
 - **Mitteilungen:** Der Arzt kann über die Schaltfläche "Mitteilungen" die neuesten Ankündigungen einsehen.
   ![Mitteilungen](Images/Screenshot3.png)
