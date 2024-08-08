@@ -58,5 +58,16 @@ namespace Projekt_Spital
             arztdatenBearbeiten.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Mitteilungen mitteilungen = new Mitteilungen(); 
+            mitteilungen.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

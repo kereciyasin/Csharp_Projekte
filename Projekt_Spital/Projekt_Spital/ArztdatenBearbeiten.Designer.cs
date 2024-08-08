@@ -98,6 +98,7 @@
             this.buttonRegistrieren.TabIndex = 39;
             this.buttonRegistrieren.Text = "Bearbeiten";
             this.buttonRegistrieren.UseVisualStyleBackColor = false;
+            this.buttonRegistrieren.Click += new System.EventHandler(this.buttonRegistrieren_Click);
             // 
             // textPass
             // 
