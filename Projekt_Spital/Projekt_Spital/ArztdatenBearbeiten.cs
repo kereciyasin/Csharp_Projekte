@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Projekt_Spital
 {
@@ -15,6 +16,12 @@ namespace Projekt_Spital
         public ArztdatenBearbeiten()
         {
             InitializeComponent();
+        }
+        sql sql = new sql();
+        public string NummerNo;
+        private void ArztdatenBearbeiten_Load(object sender, EventArgs e)
+        {
+            maskedId.Text = NummerNo;
         }
     }
 }

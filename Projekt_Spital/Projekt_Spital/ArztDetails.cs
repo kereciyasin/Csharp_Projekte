@@ -40,6 +40,23 @@ namespace Projekt_Spital
             labelArztname.Text = dr[0].ToString() + " " +  dr[1].ToString();
             }
             sql.Connection().Close();
+
+
+            //Termin
+
+            DataTable dt = new DataTable();
+           SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("Select * From Tbl_Termin where TerminArzt='" + labelArztname.Text + "'", sql.Connection());   
+            sqlDataAdapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            ArztdatenBearbeiten arztdatenBearbeiten = new ArztdatenBearbeiten();
+            arztdatenBearbeiten.NummerNo = labelId.Text;    
+            arztdatenBearbeiten.Show();
+            this.Hide();
         }
     }
 }
