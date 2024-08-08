@@ -77,11 +77,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(83, 199);
+            this.label2.Location = new System.Drawing.Point(120, 199);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 35);
+            this.label2.Size = new System.Drawing.Size(109, 35);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Patient ID :";
+            this.label2.Text = "Arzt ID :";
             // 
             // label1
             // 

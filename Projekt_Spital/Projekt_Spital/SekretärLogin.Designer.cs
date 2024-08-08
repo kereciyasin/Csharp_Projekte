@@ -53,6 +53,7 @@
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(268, 42);
             this.textPass.TabIndex = 11;
+            this.textPass.UseSystemPasswordChar = true;
             // 
             // maskedId
             // 
