@@ -69,5 +69,11 @@ namespace Projekt_Spital
         {
             Application.Exit();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int option = dataGridView1.SelectedCells[0].RowIndex;
+            richTextBox1.Text = dataGridView1.Rows[option].Cells[7].Value.ToString();
+        }
     }
 }
