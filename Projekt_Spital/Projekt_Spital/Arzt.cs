@@ -28,7 +28,10 @@ namespace Projekt_Spital
             if (dr.Read()) 
             {
              ArztDetails arztDetails = new ArztDetails();
+                arztDetails.ID = maskedId.Text; 
                 arztDetails.Show();
+                this.Hide();
+
 
             }
             else

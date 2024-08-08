@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArztDetails));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labelName = new System.Windows.Forms.Label();
+            this.labelArztname = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.labelName);
+            this.groupBox1.Controls.Add(this.labelArztname);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.labelId);
             this.groupBox1.Controls.Add(this.label1);
@@ -64,14 +64,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arztinformationen";
             // 
-            // labelName
+            // labelArztname
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(259, 96);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(119, 35);
-            this.labelName.TabIndex = 3;
-            this.labelName.Text = "Null Null";
+            this.labelArztname.AutoSize = true;
+            this.labelArztname.Location = new System.Drawing.Point(259, 96);
+            this.labelArztname.Name = "labelArztname";
+            this.labelArztname.Size = new System.Drawing.Size(119, 35);
+            this.labelArztname.TabIndex = 3;
+            this.labelArztname.Text = "Null Null";
             // 
             // label3
             // 
@@ -90,6 +90,7 @@
             this.labelId.Size = new System.Drawing.Size(169, 35);
             this.labelId.TabIndex = 1;
             this.labelId.Text = "00000000000";
+            this.labelId.Click += new System.EventHandler(this.labelId_Click);
             // 
             // label1
             // 
@@ -212,6 +213,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ArztDetails";
             this.Text = "ArztDetails";
+            this.Load += new System.EventHandler(this.ArztDetails_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -229,7 +231,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelArztname;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;

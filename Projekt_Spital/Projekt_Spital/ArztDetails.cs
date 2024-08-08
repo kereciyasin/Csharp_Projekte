@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Projekt_Spital
 {
@@ -15,6 +16,30 @@ namespace Projekt_Spital
         public ArztDetails()
         {
             InitializeComponent();
+        }
+        sql sql = new sql();
+        public string ID;
+
+        private void labelId_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void ArztDetails_Load(object sender, EventArgs e)
+        {
+            labelId.Text = ID;
+
+            // Arzt Vor-Nachname
+
+            SqlCommand cmd = new SqlCommand("Select ArztVorname, ArztNachname from Tbl_Arzt where ArztNummer=@p1", sql.Connection());
+            cmd.Parameters.AddWithValue("@p1", labelId.Text );
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read()) 
+            {
+            labelArztname.Text = dr[0].ToString() + " " +  dr[1].ToString();
+            }
+            sql.Connection().Close();
         }
     }
 }

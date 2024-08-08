@@ -53,6 +53,7 @@
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(268, 42);
             this.textPass.TabIndex = 11;
+            this.textPass.Text = "12345";
             this.textPass.UseSystemPasswordChar = true;
             // 
             // maskedId
@@ -62,6 +63,7 @@
             this.maskedId.Name = "maskedId";
             this.maskedId.Size = new System.Drawing.Size(265, 42);
             this.maskedId.TabIndex = 10;
+            this.maskedId.Text = "12345678901";
             // 
             // label3
             // 
