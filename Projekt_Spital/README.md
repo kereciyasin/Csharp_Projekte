@@ -53,7 +53,7 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
 ### Sekretär-Login
 
 - **Anmeldung:** Sekretäre melden sich mit ihrer ID und ihrem Passwort im System an.
-  ![Sekretär-Login](path_to_your_image)
+  ![Sekretär-Login](Images/Screenshot003.png)
   
 - **Mitteilungen erstellen:** Der Sekretär kann neue Ankündigungen im System erstellen.
   
@@ -62,7 +62,7 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
 - **Fachrichtungen und Ärzte:** Der Sekretär kann die vorhandenen Fachrichtungen und Ärzte einsehen.
   
 - **Schnellzugriff:** Der Sekretär hat über Schnellzugriffsfelder Zugriff auf die Arzt-, Fachrichtungs-, Termin- und Mitteilungslisten.
-  ![Sekretär-Bildschirm](path_to_your_image)
+  ![Sekretär-Bildschirm](Images/Screenshot002.png)
 
 ## Datenbank
 
