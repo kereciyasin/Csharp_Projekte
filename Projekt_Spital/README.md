@@ -22,7 +22,7 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
 ### Patienten-Login
 
 - **Anmeldung:** Patienten melden sich mit ihrer Passnummer und ihrem Passwort im System an.
-  ![Patienten-Login](/Images/Screenshot1.png)
+  ![Patienten-Login](Images/Screenshot1.png)
   
 - **Aktuelle Termine:** Nach der Anmeldung werden die aktuellen Termine des Patienten angezeigt.
   ![Aktuelle Termine](/Images/Screenshot2.png)
