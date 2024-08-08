@@ -40,7 +40,7 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
   ![Arzt-Login](Images/Screenshot6.png)
   
 - **Terminliste:** Der Arzt kann seine Terminliste einsehen und durch Klicken auf einen Termin die Beschwerde des Patienten einsehen.
-  ![Terminliste](Images/Screenshot6.png)
+  ![Terminliste](Images/Screenshot001.png)
   
 - **Daten bearbeiten:** Der Arzt kann über die Schaltfläche "Daten bearbeiten" seine persönlichen Informationen aktualisieren.
   ![Daten bearbeiten](Images/Screenshot4.png)
