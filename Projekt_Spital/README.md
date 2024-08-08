@@ -25,27 +25,28 @@ Dieses Programm ist ein Krankenhaus-Management-System, das mit **C# Windows Form
   ![Patienten-Login](Images/Screenshot1.png)
   
 - **Aktuelle Termine:** Nach der Anmeldung werden die aktuellen Termine des Patienten angezeigt.
-  ![Aktuelle Termine](/Images/Screenshot2.png)
+  ![Aktuelle Termine](Images/Screenshot10.png)
   
 - **Neuer Termin:** Der Patient kann eine neue Terminvereinbarung treffen, indem er seine Beschwerde eingibt.
-  ![Neuer Termin](/Images/Screenshot3.png)
+  ![Neuer Termin](Images/Screenshot9.png)
   
 - **Daten bearbeiten:** Der Patient kann über die Schaltfläche "Meine Daten bearbeiten" seine vorhandenen Daten aktualisieren. Alle Änderungen werden automatisch in der SQL-Datenbank gespeichert.
-  ![Daten bearbeiten](/Images/Screenshot4.png)
+  ![Daten bearbeiten](Images/Screenshot8.png)
 
 ### Arzt-Login
 
 - **Anmeldung:** Ärzte melden sich mit ihrer ID-Nummer und ihrem Passwort im System an. Bei falschen Anmeldeinformationen wird eine Fehlermeldung angezeigt, und der Benutzer wird aufgefordert, sich erneut anzumelden.
-  ![Arzt-Login](path_to_your_image)
+  ![Arzt-Login](Images/Screenshot7.png)
+  ![Arzt-Login](Images/Screenshot6.png)
   
 - **Terminliste:** Der Arzt kann seine Terminliste einsehen und durch Klicken auf einen Termin die Beschwerde des Patienten einsehen.
-  ![Terminliste](path_to_your_image)
+  ![Terminliste](Images/Screenshot6.png)
   
 - **Daten bearbeiten:** Der Arzt kann über die Schaltfläche "Daten bearbeiten" seine persönlichen Informationen aktualisieren.
-  ![Daten bearbeiten](path_to_your_image)
+  ![Daten bearbeiten](Images/Screenshot4.png)
   
 - **Mitteilungen:** Der Arzt kann über die Schaltfläche "Mitteilungen" die neuesten Ankündigungen einsehen.
-  ![Mitteilungen](path_to_your_image)
+  ![Mitteilungen](Images/Screenshot3.png)
   
 - **Ausloggen:** Der Arzt kann über die Schaltfläche "Ausloggen" das System vollständig verlassen.
 
