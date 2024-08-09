@@ -16,5 +16,12 @@ namespace Schule_Projekt
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmClub frmClub = new FrmClub();
+            frmClub.Show();
+
+        }
     }
 }
