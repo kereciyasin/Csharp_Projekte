@@ -23,5 +23,12 @@ namespace Schule_Projekt
             frmClub.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmUnterricht frmUnterricht = new FrmUnterricht();
+            frmUnterricht.Show();
+            
+        }
     }
 }

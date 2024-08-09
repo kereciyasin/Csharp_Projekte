@@ -28,5 +28,12 @@ namespace Schule_Projekt
             frmStudent.nummer = textBox1.Text;
             frmStudent.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FrmLehrer frmLehrer = new FrmLehrer();
+            frmLehrer.Show();
+            this.Hide();
+        }
     }
 }
