@@ -67,5 +67,16 @@ namespace Schule_Projekt
             MessageBox.Show("Das wurde gelöscht!");
             blick();
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            verbinden.Open();
+            SqlCommand sqlCommand1 = new SqlCommand("Update Tbl_Club set ClubName=@p1 where ClubId=@p2", verbinden);
+            sqlCommand1.Parameters.AddWithValue("@p1", textClubName.Text);
+            sqlCommand1.Parameters.AddWithValue("@p2", textClubId.Text);
+            sqlCommand1.ExecuteNonQuery();
+            verbinden.Close();
+            blick();
+        }
     }
 }

@@ -106,6 +106,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonHin
             // 
