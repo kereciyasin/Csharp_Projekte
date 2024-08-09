@@ -45,5 +45,27 @@ namespace Schule_Projekt
             verbinden.Close();
             MessageBox.Show("Club hinzugefügt");
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textClubId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textClubName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+        }
+
+        private void buttonDelete(object sender, EventArgs e)
+        {
+            verbinden.Open();
+            SqlCommand cmd2 = new SqlCommand("Delete from Tbl_Club where ClubId=@p1",verbinden);
+            cmd2.Parameters.AddWithValue("@p1", textClubId.Text);
+            cmd2.ExecuteNonQuery();
+            verbinden.Close();
+            MessageBox.Show("Das wurde gelöscht!");
+            blick();
+        }
     }
 }
