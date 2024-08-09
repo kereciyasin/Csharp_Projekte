@@ -64,6 +64,7 @@
             this.buttonDelete.TabIndex = 20;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonHin
             // 
@@ -74,6 +75,7 @@
             this.buttonHin.TabIndex = 19;
             this.buttonHin.Text = "Hinzufügen";
             this.buttonHin.UseVisualStyleBackColor = false;
+            this.buttonHin.Click += new System.EventHandler(this.buttonHin_Click);
             // 
             // buttonUpdate
             // 
@@ -84,6 +86,7 @@
             this.buttonUpdate.TabIndex = 18;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonBlick
             // 
@@ -94,6 +97,7 @@
             this.buttonBlick.TabIndex = 17;
             this.buttonBlick.Text = "Blick";
             this.buttonBlick.UseVisualStyleBackColor = false;
+            this.buttonBlick.Click += new System.EventHandler(this.buttonBlick_Click);
             // 
             // textClubName
             // 
@@ -140,6 +144,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(660, 248);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // FrmUnterricht
             // 
@@ -159,7 +164,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmUnterricht";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUnterricht";
