@@ -51,10 +51,10 @@ Dieses Repository enthält verschiedene Projekte, die in **C#** entwickelt wurde
 - **Technologien:** C#, Windows Forms
   
 ## Udemy-Kurs
-- ** Diese Projekte wurden im Rahmen verschiedener C#-Kurse auf der Udemy-Plattform entwickelt. Die Schwerpunkte der Ausbildung waren:
-- ** Grundlagen der C#-Programmierung
-- ** Entwicklung von Windows Forms-Anwendungen
-- ** Datenbankverbindungen und SQL-Verwendung
+- **Diese Projekte wurden im Rahmen verschiedener C#-Kurse auf der Udemy-Plattform entwickelt. Die Schwerpunkte der Ausbildung waren:
+- **Grundlagen der C#-Programmierung
+- **Entwicklung von Windows Forms-Anwendungen
+- **Datenbankverbindungen und SQL-Verwendung
 Dank dieser Kurse konnte ich umfassende Kenntnisse in der C#-Programmierung erwerben und das Gelernte in praktischen Projekten umsetzen.
 
 ## Installation
