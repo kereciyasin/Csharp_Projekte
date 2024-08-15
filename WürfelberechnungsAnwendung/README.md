@@ -34,3 +34,4 @@ Dieses Projekt ist eine einfache C# Windows Forms Anwendung, die es Benutzern er
 3. Klicken Sie auf die Schaltfläche "Berechnen".
 4. Das Ergebnis wird im Feld "Ergebnis" angezeigt.
 
+
