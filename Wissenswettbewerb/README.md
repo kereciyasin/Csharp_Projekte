@@ -1,4 +1,4 @@
-# Quiz-Spiel
+# Quiz Spiel
 
 Dieses Projekt ist ein Quiz-Spiel, das mit C# und Windows Form App (.NET Framework) entwickelt wurde. Das Spiel präsentiert dem Benutzer 3 Fragen mit jeweils 4 Antwortmöglichkeiten und gibt visuelles Feedback, wenn der Benutzer eine richtige oder falsche Antwort gibt. Zudem wird angezeigt, welche Frage gerade beantwortet wird und wie viele richtige bzw. falsche Antworten der Benutzer gegeben hat.
 
